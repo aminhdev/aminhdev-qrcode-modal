@@ -13,6 +13,12 @@ async function buildAsset({ assetDir, assetFile, targetFile, targetVar, loader }
   const value = typeof output === "string" ? "`" + output + "`" : JSON.stringify(output, null, 2);
   const content = "export const " + targetVar + " = " + value + ";";
   await writeFile(targetFilePath, content);
+  console.log(``);
+  console.log("------------------------------------------------log");
+  console.log(`targetFilePath:`, targetFilePath);
+  console.log(`assetFilePath:`, assetFilePath);
+  // console.log(`content:`, content);
+  console.log(`----------------------`);
 }
 
 module.exports = buildAsset;

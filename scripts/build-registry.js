@@ -19,6 +19,11 @@ const registryLoader = input => {
   );
 };
 
+console.log(``);
+console.log("------------------------------------------------log");
+console.log(`REGISTRY_DIR:`, REGISTRY_DIR);
+console.log(`----------------------`);
+
 buildAsset({
   assetDir: REGISTRY_DIR,
   assetFile: "registry.json",
